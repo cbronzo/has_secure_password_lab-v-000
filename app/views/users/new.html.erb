@@ -1,7 +1,11 @@
 <%= form_for :user, url: users_path, :method => 'POST' do |f| %>
   
+  Name:
   <%= f.text_field :name %>
+  
+  Password:
   <%= f.text_field :password %>
+  
   <%= f.text_field :password_confirmation %>
   <%= f.submit "Sign Up" %>
  <% end %>
