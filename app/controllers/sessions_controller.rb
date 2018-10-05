@@ -13,8 +13,8 @@ class SessionsController < ApplicationController
   end
   
   def destroy
-    reset_session
-    redirect_to '/login'
+    session.delete :user_id
+    redirect_to login_path
   end
   
 end
